@@ -81,7 +81,7 @@ export function InterviewQuestionsModal({
                 </h3>
               </div>
               <div className="space-y-3">
-                {technicalQuestions.map((question, idx) => (
+                {technicalQuestions.map((question: string, idx: number) => (
                   <motion.div
                     key={idx}
                     variants={itemVariants}
@@ -105,7 +105,7 @@ export function InterviewQuestionsModal({
                 </h3>
               </div>
               <div className="space-y-3">
-                {behavioralQuestions.map((question, idx) => (
+                {behavioralQuestions.map((question: string, idx: number) => (
                   <motion.div
                     key={idx}
                     variants={itemVariants}

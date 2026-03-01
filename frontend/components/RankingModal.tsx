@@ -81,7 +81,7 @@ export default function RankingModal({ candidate, onClose }: RankingModalProps) 
             <div>
               <h3 className="text-lg font-bold mb-3">Key Skills</h3>
               <div className="flex flex-wrap gap-2">
-                {candidate.reasoning.skills?.split(',').map((skill, idx) => (
+                {candidate.reasoning.skills?.split(',').map((skill: string, idx: number) => (
                   <span key={idx} className="badge">
                     {skill.trim()}
                   </span>

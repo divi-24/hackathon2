@@ -137,7 +137,7 @@ export function CandidatePipelineCard({
           <div className="mb-6 p-3 bg-slate-800/30 rounded-lg border border-slate-700/50">
             <p className="text-xs font-semibold text-slate-400 mb-2 uppercase">History</p>
             <div className="space-y-1 max-h-24 overflow-y-auto text-xs text-slate-500">
-              {history.map((entry, idx) => (
+              {history.map((entry: any, idx: number) => (
                 <div key={idx} className="flex justify-between">
                   <span className="capitalize">{entry.state.replace(/_/g, ' ')}</span>
                   <span className="text-slate-600">
