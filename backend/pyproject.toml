@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hr-agent-api"
+version = "1.0.0"
+description = "Production-grade HR automation API"
+requires-python = ">=3.10"
+
+[tool.setuptools]
+packages = ["app", "hr_agent"]
